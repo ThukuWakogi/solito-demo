@@ -1,3 +1,5 @@
+'use client'
+
 import { Dripsy } from './dripsy'
 import { NavigationProvider } from './navigation'
 
