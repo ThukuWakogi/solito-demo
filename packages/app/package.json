@@ -7,7 +7,7 @@
     "@react-navigation/native-stack": "^6.9.13",
     "dripsy": "^4.3.3",
     "moti": "latest",
-    "solito": "4.0.1"
+    "solito": "^4.2.0"
   },
   "sideEffects": false
 }

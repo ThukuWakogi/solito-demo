@@ -1,6 +1,8 @@
-import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
+'use client'
+
+import { A, H1, P, Row, Text, View, useSx } from 'dripsy'
 import { TextLink } from 'solito/link'
-import { MotiLink } from 'solito/moti'
+import { MotiLink } from 'solito/moti/app'
 
 export function HomeScreen() {
   const sx = useSx()
@@ -20,10 +22,7 @@ export function HomeScreen() {
           Solito is made by{' '}
           <A
             href="https://twitter.com/fernandotherojo"
-            hrefAttrs={{
-              target: '_blank',
-              rel: 'noreferrer',
-            }}
+            hrefAttrs={{ target: '_blank', rel: 'noreferrer' }}
             sx={{ color: 'blue' }}
           >
             Fernando Rojo

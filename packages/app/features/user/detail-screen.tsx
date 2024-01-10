@@ -1,11 +1,11 @@
-import { View, Text } from 'dripsy'
-import { createParam } from 'solito'
-import { TextLink } from 'solito/link'
+'use client'
 
-const { useParam } = createParam<{ id: string }>()
+import { Text, View } from 'dripsy'
+import { TextLink } from 'solito/link'
+import { useParams } from 'solito/navigation'
 
 export function UserDetailScreen() {
-  const [id] = useParam('id')
+  const { id } = useParams<{ id: string }>()
 
   return (
     <View sx={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
